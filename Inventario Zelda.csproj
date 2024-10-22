@@ -1,0 +1,481 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>Inventario_Zelda</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <PackageIcon>PH Tracker Logo.png</PackageIcon>
+    <NeutralLanguage>es-ES</NeutralLanguage>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ambar_0.png" />
+    <None Remove="anillo_0.png" />
+    <None Remove="arco_0.png" />
+    <None Remove="bomba_0.png" />
+    <None Remove="bombchu_0.png" />
+    <None Remove="boomerang_0.png" />
+    <None Remove="boomerang_1.png" />
+    <None Remove="cartajolene_0.png" />
+    <None Remove="caña_0.png" />
+    <None Remove="cañon_0.png" />
+    <None Remove="collar_0.png" />
+    <None Remove="coral_0.png" />
+    <None Remove="corona_0.png" />
+    <None Remove="cupon_0.png" />
+    <None Remove="escama_0.png" />
+    <None Remove="escudo_0.png" />
+    <None Remove="espadaF_0.png" />
+    <None Remove="espada_0.png" />
+    <None Remove="fondo app.jpg" />
+    <None Remove="gancho_0.png" />
+    <None Remove="garra_0.png" />
+    <None Remove="gemap_0.png" />
+    <None Remove="gemas_0.png" />
+    <None Remove="gemav_0.png" />
+    <None Remove="hoja_0.png" />
+    <None Remove="img\ambar_0.png" />
+    <None Remove="img\ambar_1.png" />
+    <None Remove="img\anillo_0.png" />
+    <None Remove="img\anillo_1.png" />
+    <None Remove="img\arco_0.png" />
+    <None Remove="img\arco_1.png" />
+    <None Remove="img\arco_2.png" />
+    <None Remove="img\arco_3.png" />
+    <None Remove="img\arena_0.png" />
+    <None Remove="img\arena_1.png" />
+    <None Remove="img\bomba_0.png" />
+    <None Remove="img\bomba_2.png" />
+    <None Remove="img\bomba_3.png" />
+    <None Remove="img\bombchu_0.png" />
+    <None Remove="img\bombchu_1.png" />
+    <None Remove="img\bombchu_2.png" />
+    <None Remove="img\bombchu_3.png" />
+    <None Remove="img\boomerang_0.png" />
+    <None Remove="img\boomerang_1.png" />
+    <None Remove="img\cartajolene_0.png" />
+    <None Remove="img\cartajolene_1.png" />
+    <None Remove="img\caña_0.png" />
+    <None Remove="img\caña_1.png" />
+    <None Remove="img\cañon_0.png" />
+    <None Remove="img\cañon_1.png" />
+    <None Remove="img\collar_0.png" />
+    <None Remove="img\collar_1.png" />
+    <None Remove="img\coral_0.png" />
+    <None Remove="img\coral_1.png" />
+    <None Remove="img\corona_0.png" />
+    <None Remove="img\corona_1.png" />
+    <None Remove="img\cupon_0.png" />
+    <None Remove="img\cupon_1.png" />
+    <None Remove="img\escama_0.png" />
+    <None Remove="img\escama_1.png" />
+    <None Remove="img\escudo_0.png" />
+    <None Remove="img\escudo_1.png" />
+    <None Remove="img\espadaF_0.png" />
+    <None Remove="img\espadaF_1.png" />
+    <None Remove="img\espada_0.png" />
+    <None Remove="img\espada_1.png" />
+    <None Remove="img\fondo app.jpg" />
+    <None Remove="img\gancho_0.png" />
+    <None Remove="img\gancho_1.png" />
+    <None Remove="img\garra_0.png" />
+    <None Remove="img\garra_1.png" />
+    <None Remove="img\hoja_0.png" />
+    <None Remove="img\hoja_1.png" />
+    <None Remove="img\icon.ico" />
+    <None Remove="img\llavefant_0.png" />
+    <None Remove="img\llavefant_1.png" />
+    <None Remove="img\llaverey_0.png" />
+    <None Remove="img\llaverey_1.png" />
+    <None Remove="img\llavesol_0.png" />
+    <None Remove="img\llavesol_1.png" />
+    <None Remove="img\marNE_0.png" />
+    <None Remove="img\marNE_1.png" />
+    <None Remove="img\marNW_0.png" />
+    <None Remove="img\marNW_1.png" />
+    <None Remove="img\marSE_0.png" />
+    <None Remove="img\marSE_1.png" />
+    <None Remove="img\marSW_0.png" />
+    <None Remove="img\marSW_1.png" />
+    <None Remove="img\maza_0.png" />
+    <None Remove="img\maza_1.png" />
+    <None Remove="img\metalA_0.png" />
+    <None Remove="img\metalA_1.png" />
+    <None Remove="img\metalR_0.png" />
+    <None Remove="img\metalR_1.png" />
+    <None Remove="img\metalV_0.png" />
+    <None Remove="img\metalV_1.png" />
+    <None Remove="img\minillave_0.png" />
+    <None Remove="img\minillave_1.png" />
+    <None Remove="img\mtesoro_0.png" />
+    <None Remove="img\mtesoro_1.png" />
+    <None Remove="img\pala_0.png" />
+    <None Remove="img\pala_1.png" />
+    <None Remove="img\perlaB_0.png" />
+    <None Remove="img\perlaB_1.png" />
+    <None Remove="img\perlaN_0.png" />
+    <None Remove="img\perlaN_1.png" />
+    <None Remove="img\pizarra_0.png" />
+    <None Remove="img\pizarra_1.png" />
+    <None Remove="img\pluma_0.png" />
+    <None Remove="img\pluma_1.png" />
+    <None Remove="img\postal_0.png" />
+    <None Remove="img\postal_1.png" />
+    <None Remove="img\potamarilla_0.png" />
+    <None Remove="img\potamarilla_1.png" />
+    <None Remove="img\potmorada_0.png" />
+    <None Remove="img\potmorada_1.png" />
+    <None Remove="img\potroja_0.png" />
+    <None Remove="img\potroja_1.png" />
+    <None Remove="img\relojA_0.png" />
+    <None Remove="img\relojA_1.png" />
+    <None Remove="img\reloj_1.png" />
+    <None Remove="img\tradeo_0.png" />
+    <None Remove="img\tradeo_1.png" />
+    <None Remove="img\tradeo_2.png" />
+    <None Remove="img\tradeo_3.png" />
+    <None Remove="img\tradeo_4.png" />
+    <None Remove="llavefant_0.png" />
+    <None Remove="llaverey_0.png" />
+    <None Remove="llavesol_0.png" />
+    <None Remove="marNE_0.png" />
+    <None Remove="marNW_0.png" />
+    <None Remove="marSE_0.png" />
+    <None Remove="marSW_0.png" />
+    <None Remove="maza_0.png" />
+    <None Remove="metalA_0.png" />
+    <None Remove="metalR_0.png" />
+    <None Remove="metalV_0.png" />
+    <None Remove="minillave_0.png" />
+    <None Remove="mtesoro_0.png" />
+    <None Remove="pala_0.png" />
+    <None Remove="perlaB_0.png" />
+    <None Remove="perlaN_0.png" />
+    <None Remove="pizarra_0.png" />
+    <None Remove="pluma_0.png" />
+    <None Remove="postal_0.png" />
+    <None Remove="potamarilla_0.png" />
+    <None Remove="potmorada_0.png" />
+    <None Remove="potroja_0.png" />
+    <None Remove="relojA_0.png" />
+    <None Remove="reloj_0.png" />
+    <None Remove="tradeo_0.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="gemap_0.png" />
+    <Resource Include="gemas_0.png" />
+    <Resource Include="gemav_0.png" />
+    <Resource Include="img\ambar_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\ambar_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\anillo_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\anillo_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\arco_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\arco_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\arco_2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\arco_3.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\arena_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\arena_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\bomba_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\bomba_2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\bomba_3.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\bombchu_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\bombchu_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\bombchu_2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\bombchu_3.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\boomerang_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\boomerang_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\cartajolene_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\cartajolene_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\caña_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\caña_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\cañon_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\cañon_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\collar_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\collar_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\coral_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\coral_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\corona_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\corona_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\cupon_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\cupon_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\escama_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\escama_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\escudo_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\escudo_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\espadaF_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\espadaF_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\espada_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\espada_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\fondo app.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\gancho_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\gancho_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\garra_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\garra_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\hoja_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\hoja_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\icon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\llavefant_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\llavefant_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\llaverey_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\llaverey_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\llavesol_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\llavesol_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\marNE_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\marNE_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\marNW_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\marNW_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\marSE_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\marSE_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\marSW_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\marSW_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\maza_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\maza_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\metalA_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\metalA_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\metalR_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\metalR_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\metalV_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\metalV_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\minillave_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\minillave_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\mtesoro_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\mtesoro_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\pala_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\pala_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\perlaB_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\perlaB_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\perlaN_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\perlaN_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\pizarra_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\pizarra_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\pluma_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\pluma_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\postal_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\postal_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\potamarilla_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\potamarilla_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\potmorada_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\potmorada_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\potroja_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\potroja_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\relojA_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\relojA_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\tradeo_0.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\tradeo_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\tradeo_2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\tradeo_3.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\tradeo_4.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="img\PH Tracker Logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

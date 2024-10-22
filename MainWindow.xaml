@@ -1,0 +1,278 @@
+﻿<Window x:Class="Inventario_Zelda.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Inventario_Zelda"
+        mc:Ignorable="d"
+        Icon="pack://application:,,,/img/icon.ico"
+        ResizeMode="NoResize"
+        Title="Inventario Zelda" Height="368" Width="492">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/img/fondo app.jpg"/>
+        </Grid.Background>
+        <Grid Margin="30,23,31,26">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            <Button Name="Reloj" HorizontalAlignment="Center" VerticalAlignment="Top" Height="100" Width="86" Grid.ColumnSpan="2" 
+                   Grid.RowSpan="2" Margin="0,1,0,0" Click="Reloj_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/relojA_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+
+            <Button Name="Pizarra" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="86" Grid.Row="2" Grid.ColumnSpan="2">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/pizarra_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="Cupon" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="86" Grid.Row="3" Grid.ColumnSpan="2">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/cupon_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="Carta_J" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="86" Grid.Row="4" Grid.ColumnSpan="2">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/cartajolene_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="Postal" HorizontalAlignment="Left" VerticalAlignment="Center" Height="50" Width="86" Grid.ColumnSpan="2" Grid.Row="5">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/postal_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="Boomerang" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="2">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/boomerang_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="Bolsa_bombas" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="2" Grid.Row="1">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/bomba_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="Espada" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="2" Grid.Row="2">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/espada_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="Escudo" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="2" Grid.Row="3">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/escudo_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="NW_map" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="2" Grid.Row="4">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/marNW_0.png" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Button Name="SW_map" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="2" Grid.Row="5">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/marSW_0.png" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Button Name="Pala" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="3">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/pala_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="BombChu" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="3" Grid.Row="1">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/bombchu_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="Hoja" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="3" Grid.Row="2">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/hoja_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="Tesoro" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="3" Grid.Row="3">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/mtesoro_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="NE_map" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="3" Grid.Row="4">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/marNE_0.png" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Button Name="SE_map" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="3" Grid.Row="5">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/marSE_0.png" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Button Name="Martillo" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="4">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/maza_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="Canya" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="4" Grid.Row="1">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/caña_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="EspadaF" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="4" Grid.Row="2">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/espadaF_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="Collar" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="4" Grid.Row="3">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/collar_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="Tradeo" HorizontalAlignment="Left" VerticalAlignment="Top" Height="100" Width="86" Grid.Column="3" Grid.ColumnSpan="3" Margin="43,50,0,0" Grid.RowSpan="3" Grid.Row="3">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/tradeo_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="Arco" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="5">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/arco_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="Gancho" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="5" Grid.Row="1">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/gancho_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="MiniLlave" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="5" Grid.Row="2">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/minillave_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="LlaveF" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="5" Grid.Row="3">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/llavefant_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="Garra" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="6">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/garra_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="Canyon" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="6" Grid.Row="1">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/cañon_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="LlaveS" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="6" Grid.Row="2">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/llavesol_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="LlaveR" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="6" Grid.Row="3">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/llaverey_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="Coral" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="6" Grid.Row="4">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/coral_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="Pluma" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="6" Grid.Row="5">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/pluma_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="MetalV" HorizontalAlignment="Right" VerticalAlignment="Center" Height="50" Width="129" Grid.Column="7" Grid.ColumnSpan="3">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/metalV_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="MetalA" HorizontalAlignment="Right" VerticalAlignment="Center" Height="50" Width="64" Grid.Column="7" Grid.Row="1" Grid.ColumnSpan="2" Margin="0,0,22,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/metalA_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="MetalR" VerticalAlignment="Center" Height="50" Grid.Column="8" Grid.Row="1" Grid.ColumnSpan="2" Margin="21,0,0,0" HorizontalAlignment="Left" Width="64">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/metalR_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="GemaS" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="7" Grid.Row="2">
+                <Button.Background>
+                    <ImageBrush ImageSource="/gemaS_0.png" Stretch="Uniform"/>
+                </Button.Background>
+
+            </Button>
+            <Button Name="PotiR" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="7" Grid.Row="3">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/potroja_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="Ambar" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="7" Grid.Row="4">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/ambar_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="Corona" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="7" Grid.Row="5">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/corona_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="GemaV" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="8" Grid.Row="2">
+                <Button.Background>
+                    <ImageBrush ImageSource="/gemaV_0.png" Stretch="Uniform"/>
+                </Button.Background>
+
+            </Button>
+            <Button Name="PotiM" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="8" Grid.Row="3">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/potmorada_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="PerlaN" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="8" Grid.Row="4">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/perlaN_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="PerlaB" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="8" Grid.Row="5">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/perlaB_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="GemaP" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="9" Grid.Row="2">
+                <Button.Background>
+                    <ImageBrush ImageSource="/gemaP_0.png" Stretch="Uniform"/>
+                </Button.Background>
+
+            </Button>
+            <Button Name="PotiA" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="9" Grid.Row="3">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/potamarilla_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="Escama" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="9" Grid.Row="4">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/escama_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Name="Anillo" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="43" Grid.Column="9" Grid.Row="5">
+                <Button.Background>
+                    <ImageBrush ImageSource="/img/anillo_0.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>
